@@ -23,14 +23,14 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_21_144334) do
   create_table "authors", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "middle_name"
+    t.string "middle_initial"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "books", force: :cascade do |t|
     t.string "title"
-    t.string "isbn"
+    t.string "isbn_13"
     t.decimal "price"
     t.integer "year_published"
     t.text "image"
