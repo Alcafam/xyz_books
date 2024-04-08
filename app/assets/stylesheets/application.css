@@ -13,3 +13,144 @@
  *= require_tree .
  *= require_self
  */
+
+ /* ==========NAVBAR========== */
+.top_nav{
+    min-height: 50px;
+    background-size: 100% 100%;
+    background-image: url("Mask Group 4.png");
+    background-repeat: no-repeat;
+}
+
+.main_nav{
+    height: 100px;
+}
+
+.search_icon{
+    position: relative;
+}
+
+.search_icon:before{
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 0;
+    width: 20px;
+    background: url("Icon feather-search.svg");
+    background-repeat: no-repeat;
+}
+
+.search_bar{
+    padding: 10px 40px !important;
+}
+  
+.nav-separator{
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.bg-purple{
+    --bs-bg-opacity: 1;
+    background-color: rgba(94, 100, 174, var(--bs-bg-opacity)) !important;  
+}
+
+#banner{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-image: url("banner bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* SLANTED BACKGROUND */
+.shape-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(176deg, #ffff 50%, #0a1b35 50%);
+}
+.shape-l{
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(176deg, #0a1b35 80%, #ffff 20%);
+}
+
+.img-background{
+    padding:1em;
+    background: rgb(143,158,180);
+    background: linear-gradient(360deg, rgba(143,158,180,1) 0%, rgba(250,250,250,1) 50%);
+    border-radius: .75rem;
+}
+
+/* CONTACT */
+#contact{
+    height: 60vh;
+}
+
+.base-div{
+    position: relative;
+    margin-top: 4em;
+}
+
+.shadow-block{
+    background: #d9e4f4;
+    border-radius: .75rem;
+    border-color: #d9e4f4;
+    width: 48%;
+    height: 200px;
+    
+    position: absolute;
+    top: 0px;
+    left: 26%;
+}
+
+.image-block{
+    background: #5792ce;
+    border-radius: .75rem;
+    border-color: #5792ce;
+    width:50%;
+    
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    padding-bottom: 40px;
+}
+    .image-block p{
+        display: block;
+        width:90%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#faq{
+    margin-top: 30vh;
+    background: #f4f7f8;
+}
+
+
+
