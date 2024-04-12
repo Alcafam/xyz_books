@@ -36,13 +36,11 @@
 					</button>
 
 					<div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
-					<%# <%= form_for IsbnSearch.new(), :url=>books_path, :method=>:get, :validate=>true, html: {class: "d-flex mx-5", role:"search", name:"search"} do |f| %>
 					<form role="search" class="d-flex mx-5" method="GET" action="books">
 						<label class="search_icon">
 							<input class="form-control rounded-pill border border-primary search_bar" type="search" placeholder="Search" aria-label="Search" name="search">
 						</label>
 					</form>
-					<%# <%end%>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item"><a class="nav-link active" aria-current="page" href="#banner">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="#explore">Rent Textbooks</a></li>

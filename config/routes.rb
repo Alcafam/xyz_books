@@ -5,4 +5,3 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "welcomes#index"
 end
-#978-1-60309-398-9 1-603-09398-2
