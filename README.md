@@ -17,9 +17,5 @@ XYZ Books by Marjy Galingan
 * HOW TO RUN THE TEST SUITE
     Test Cases uses Rspec
     The file tested is in the spec directory:
-        ```
-        -spec
-            - models
-                -book_spec
-        ```
+        ```spec > models >book_spec```
     run `rspec #{book_spec_directory}`
