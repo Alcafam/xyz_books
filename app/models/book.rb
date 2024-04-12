@@ -11,6 +11,7 @@ private
 		ten = {'X' => 10, 'x' => 10}
 # isbn_10 validator
 		if isbn.length = 10
+			
 		  	isbn.split("").each do |i|
 				x += i.to_i
 				y += x
