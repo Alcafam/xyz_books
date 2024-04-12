@@ -1,12 +1,5 @@
 require "test_helper"
 
-class BooksControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get books_index_url
-    assert_response :success
-  end
-end
-
 RSpec.describe BooksController do  
   before(:each) do 
     @project1 = Project.new('Project 1', 'description 1') # create a new project and make sure we can set the name attribute

@@ -1,5 +1,5 @@
 class WelcomesController < ApplicationController
-  def index
-    render "welcomes/index"
-  end
+	def index
+		render "welcomes/index"
+	end
 end

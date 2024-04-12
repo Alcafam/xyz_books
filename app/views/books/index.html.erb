@@ -1,37 +1,40 @@
 <div class="container my-5">
     <h1>Search Result</h1>
-<% for res in @results[:result] do %>
-    <div class="row mt-5">
+<%# <% for res in @results[:result] do %>
+    <div class="row my-5">
         <div class="col-lg-4 col-md-4 col-sm-12 px-5">
-            <%= image_tag "books/"+res['image'], class: "img-fluid" %>
+            <%= image_tag "books/"+@book['image'], class: "img-fluid" %>
         </div>
         <div class="col-lg col-md col-sm-12">
-            <h2><%= res['title'] %></h2>
-            <p class="mt-3 fw-bold"><%= res['writers'] %></p>
+            <div class="container book_title">
+                <h2><%= @book['title'] %></h2>
+                <p class="mt-3 fw-bold"><%= @book['writers'] %></p>
+            </div>
+            
 
             <ul class="list-group-numbered mt-5">
                 <li>
                     <span class="fw-bold">Edition: </span>
-                    <span class="text-purple"><%= res['edition'] %></span>
+                    <span class="text-purple"><%= @book['edition'] %></span>
                 </li>
                 <li>
                     <span class="fw-bold">Price: </span>
-                    <span class="text-purple">PHP <%= res['price'] %></span>
+                    <span class="text-purple">PHP <%= @book['price'] %></span>
                 </li>
                 <li>
                     <span class="fw-bold">ISBN: </span>
-                    <span class="text-purple"><%= res['isbn_13'] %></span>
+                    <span class="text-purple"><%= @book['converted_isbn'].length == 10 ? @book['isbn_10'] : @book['isbn_13']%></span>
                 </li>
                 <li>
                     <span class="fw-bold">Publication Year: </span>
-                    <span class="text-purple"><%= res['year_published'] %></span>
+                    <span class="text-purple"><%= @book['year_published'] %></span>
                 </li>
                 <li>
                     <span class="fw-bold">Publisher: </span>
-                    <span class="text-purple"><%= res['publisher'] %></span>
+                    <span class="text-purple"><%= @book['publisher'] %></span>
                 </li>
             </ul>
         </div>
     </div>
-<% end%>
+<%# <% end%>
 </div>

@@ -200,6 +200,14 @@
         padding-top: 3rem;
         text-align: center;
     }
+
+    .book_title{
+        text-align: center;
+    }
+
+    .book_title p{
+        scale:.9
+    }
 }
 
 @media (min-width: 768px) {
@@ -421,3 +429,5 @@
     bottom: 30%;
     right: 0;
 }
+
+
