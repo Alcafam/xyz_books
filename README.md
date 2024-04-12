@@ -21,5 +21,3 @@ XYZ Books by Marjy Galingan
                 -book_spec
         ```
     run `rspec #{book_spec_directory}`
-
-* ...
