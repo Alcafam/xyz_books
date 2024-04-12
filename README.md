@@ -17,7 +17,7 @@ XYZ Books by Marjy Galingan
       -open given link in browser
   
 * HOW TO RUN THE TEST SUITE
-    * 
+* 
     Test Cases uses Rspec
     The file tested is in the spec directory:
         ```spec > models >book_spec```
