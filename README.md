@@ -14,7 +14,7 @@ XYZ Books by Marjy Galingan
 ```
 rails c
 // Book table
-Book.create(title: "American Elf", isbn_13: "978-1-891830-85-3", isbn_10: "1-891-83085-6", price: 0.1e4, year_published: 2004, image: "9781891830853.jpg", edition: "Book 2" publisher_id: 1)
+Book.create(title: "American Elf", isbn_13: "978-1-891830-85-3", isbn_10: "1-891-83085-6", price: 0.1e4, year_published: 2004, image: "9781891830853.jpg", edition: "Book 2", publisher_id: 1)
 Book.create(title: "Cosmoknights", isbn_13: "978-1-60309-454-2", isbn_10: "1-603-09454-7", price: 0.2e4, year_published: 2019, image: "9781603094542.jpg", edition: "Book 1", publisher_id: 2)
 Book.create(title: "Essex County", isbn_13: "978-1-60309-038-4", isbn_10: "1-603-09038-X", price: 0.5e3, year_published: 1990, image: "9781603090384.jpg", publisher_id: 3)
 Book.create(title: "Hey, Mister (Vol 1)", isbn_13: "978-1-891830-02-0", isbn_10: "1-891-83002-3", price: 0.12e4, year_published: 2000, image: "9781891830020.jpg", edition: "After School Special", publisher_id: 3)
