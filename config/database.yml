@@ -19,7 +19,7 @@ test:
 
 production:
   <<: *default
-  database: myapp_production
+  database: <%= ENV["PG_DATABASE"] %>
   username: <%= ENV["PG_USERNAME"] %>
   password: <%= ENV["PG_PASSWORD"] %>
   host: <%= ENV["PG_HOST"] %>
